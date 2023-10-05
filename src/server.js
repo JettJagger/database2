@@ -25,7 +25,7 @@ app.use(userRouter);
 
 
 //health check for API and to check server is working 
-app.get("./health", (req, res) => {
+app.get("/health", (req, res) => {
     res.status(200).json({
         message: "This API is alive and healthy"
     })
